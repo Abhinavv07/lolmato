@@ -1,0 +1,95 @@
+
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: green;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: snow;
+}
+
+.header {
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 128, 0, 0.8), rgba(0, 128, 0, 0.2)), url("https://source.unsplash.com/1000x500/?chickenfood");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.promo {
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 20px 0;
+}
+
+.foods-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.food-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.footer {
+    background-color: #0f10112e;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .foods-container {
+        flex-direction: column;
+    }
+
+    .food-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 60px 0;
+    }
+    
+    .header h1 {
+        font-size: 28px;
+    }
+}
